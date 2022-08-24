@@ -44,6 +44,11 @@ ul li{
     margin: 1rem 0;
 }
 
+ul li label {
+    cursor: pointer;
+}
+
+
 button {
     background-color: aquamarine;
     border: none;
