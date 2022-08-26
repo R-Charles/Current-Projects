@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div id="test" style="text-align:center;"></div>
+    <div class="quiz-container" id="test">
+        <div class="quiz-header">
+            <h2 id="question">Question text</h2>
+            <!-- ul>li*4>input+label (this cmd creates the object below)  -->
+            <ul>
+                <li>
+                    <input type="radio" id="a" 
+                    name="answer" class="answer">
+                    <label id="a_text" for="a">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="b" 
+                    name="answer" class="answer" >
+                    <label id="b_text" for="b">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="c" 
+                    name="answer" class="answer">
+                    <label id="c_text" for="c">Question</label>
+                </li>
+                <li>
+                    <input type="radio" id="d" 
+                    name="answer" class="answer">
+                    <label id="d_text" for="d">Question</label>
+                </li>
+            </ul>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
+<!-- div create form 
+use form data to grab response 
+place input inside of form
+add values to radio inputs
+getElementById 
+
+ -->
+ 
