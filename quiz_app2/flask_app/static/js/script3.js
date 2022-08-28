@@ -1,60 +1,46 @@
 const testData = [
     {
-        question: 'Who was the wealthiest person in history?',
-        a:  'Elon Musk',
-        b:  'Augustus Ceasar',
-        c:  'Queen Cleopatra',
-        d:  'Mansa Musa King of Timbuktu',
+        question: 'Who was the creator of Dragonball Z',
+        a:  'Fuji Yamamoto',
+        b:  'Akira Toriyama',
+        c:  'Shiro Watanabe',
+        d:  'Yoshi Fujima',
         correct: 'b'
     },  {
-        question: 'Who designed The Worlds first internal cumbustion engine?',
-        a:  'Karl Benz',
-        b:  'Samuel Brown',
-        c:  'Francois Isaac',
-        d:  'Christian Huygens',
-        correct: 'd'
+        question: 'Top female anime composer of all time?',
+        a:  'Yuki Kajiura',
+        b:  'Elizabeth Heinz',
+        c:  'Yoko Kanno',
+        d:  'Alpha Andromedae',
+        correct: 'c'
     },  {
-        question: 'Group of Jewish assassins that hunted Nazi war criminals...',
-        a:  'The Avengers',
-        b:  'Inglorious Bastards',
-        c:  'Libration Army',
-        d:  'Meine Lieb',
-        correct: 'a'
-    },  {
-        question: 'what year did Hawaii become Americas 50th state?',
-        a:  '1989',
-        b:  '1959',
-        c:  '1901',
-        d:  '1997',
+        question: 'Top box office anime of all time',
+        a:  'Death Note',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
         correct: 'b'
     },  {
-        question: 'who was the first African American marine',
-        a:  'Jonathan Summers',
-        b:  'Richard Freeman',
-        c:  'Thomas Whitman',
-        d:  'Alfred Masters',
-        correct: 'd'
-    },  {
-        question: 'who did the concept for minutes come from',
-        a:  'The Babylonians',
-        b:  'Conquistadors',
-        c:  'The Apache',
-        d:  'Russia',
+        question: 'Which country watches the most anime',
+        a:  'US',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
         correct: 'a'
     },  {
-        question: 'last country to gain indepence',
-        a:  'Macao',
-        b:  'Yeman',
-        c:  'Papa New Guinea',
-        d:  'South Sudan',
+        question: 'Which anime does the character Ryoma Echizen belong to?',
+        a:  'Soul Eater',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
         correct: 'd'
-    },  {
-        question: 'Who invented the radio',
-        a:  'Guglielmo Marconi ',
-        b:  'Rouchard Philippe',
-        c:  'Hubart Almovic',
-        d:  'Isaac Constantine',
-        correct: 'a'
+    },   {
+        question: 'What was the first anime movie, released in 1945?',
+        a:  'Momotaro',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
     }
 
 ];
@@ -127,3 +113,4 @@ submitBtn.addEventListener("click", () => {
     }
 
 });
+

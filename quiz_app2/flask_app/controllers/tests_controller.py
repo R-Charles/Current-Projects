@@ -115,4 +115,8 @@ def history():
 def general():
     return render_template('test1.html')
 
+@app.route( '/tests/anime' )
+def anime():
+    return render_template('anime.html')
+
 

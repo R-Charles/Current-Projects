@@ -34,6 +34,42 @@ const testData = [
         c:  'Tomand',
         d:  'Nikola',
         correct: 'd'
+    },   {
+        question: 'What is the tallest building in the US?',
+        a:  'Central Park Tower',
+        b:  'Willis Tower',
+        c:  'World Trade Center',
+        d:  'Empire State Building',
+        correct: 'c'
+    },  {
+        question: 'What is the actual name of the North Star?',
+    
+        a:  'Polaris',
+        b:  'Betelgeuse',
+        c:  'Rigel',
+        d:  'Alpha Andromedae',
+        correct: 'a'
+    },  {
+        question: 'what does the acronym A.D. stand for?',
+        a:  'After Death',
+        b:  'Anoro Dominae',
+        c:  'Anno Domini',
+        d:  'It means nothing at all',
+        correct: 'c'
+    },  {
+        question: 'what does the acronym A.D. stand for?',
+        a:  'After Death',
+        b:  'Anoro Dominae',
+        c:  'Anno Domini',
+        d:  'It means nothing at all',
+        correct: 'c'
+    },  {
+        question: 'who was the company Tesla named after?',
+        a:  'Nicolas',
+        b:  'Thomas',
+        c:  'Tomand',
+        d:  'Nikola',
+        correct: 'd'
     }
 
 ];

@@ -10,11 +10,18 @@ bcrypt = Bcrypt( app )
 def display_login():
     return render_template( 'login.html' )
 
+
+@app.route('/dashboard')
+def display():
+    if "id" not in session:
+        return redirect('/')
+    return render_template('dashboard.html')
+
 # all action routes ruturn a redirect NOT a render
 @app.route('/user/create', methods = ['POST']) 
 def registration():
     #validate the registration form
-    if User.validate_user( request.form ) == False:
+    if User.validate_registration( request.form ) == False:
         return redirect( '/' )
     data ={"email":request.form["email"]}
     # validate if the user already exists
@@ -33,7 +40,7 @@ def registration():
     session['email'] = data['email']
     session['user_id'] = user_id
 
-    return redirect( '/dashboard' ) #This needs to change to another display route 
+    return redirect( '/tests' ) #This needs to change to another display route 
 
 @app.route( '/user/login', methods = ['POST'] )
 def logon():

@@ -20,12 +20,24 @@ class User:
 
         result = connectToMySQL( DATABASE ).query_db( query, data )
 
-        
         if len( result ) > 0:
             current_user = cls( result [0] )
             return current_user
         else:
             return None
+
+    @classmethod
+    def get_one( cls, data ):
+        query = "SELECT * "
+        query += "FROM users "
+        query += "WHERE id = %(id)s;"
+
+        result = connectToMySQL( DATABASE ).query_db( query, data )
+
+        if result: 
+            return cls(result[0])
+
+
 
     @classmethod
     def create( cls, data ):

@@ -38,6 +38,32 @@
             <button id="submit">Submit</button>
         </div>
     </div>
+
+    <div id="quote">
+        <script type="text/javascript">
+
+            const api_url ="https://zenquotes.io/api/quotes/";
+            
+            async function getapi(url)
+            {
+              const response = await fetch(url);
+              var data = await response.json();
+              console.log(data);
+            }
+            
+            getapi(api_url);
+            
+            </script>
+    </div>
+    <div id="quote">
+        <?php
+            $curl = curl_init();
+            curl_setopt($curl, CURLOPT_URL, "https://zenquotes.io/api/quotes/");
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+            $output = curl_exec($curl);
+            curl_close($curl);
+            ?>
+    </div>
     <script src="{{ url_for('static', filename='js/script2.js') }}"></script>
 </body>
 </html>
