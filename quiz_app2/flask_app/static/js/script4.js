@@ -1,35 +1,161 @@
 const testData = [
     {
-        question: 'What does a Process mean in Computer Science?',
-        a:  'Fuji Yamamoto',
+        question: 'tuvo',
+        a:  'had',
         b:  'Akira Toriyama',
         c:  'Shiro Watanabe',
         d:  'Yoshi Fujima',
         correct: 'b'
     },  {
-        question: 'Top female anime composer of all time?',
-        a:  'Yuki Kajiura',
+        question: 'algo',
+        a:  'something',
         b:  'Elizabeth Heinz',
         c:  'Yoko Kanno',
         d:  'Alpha Andromedae',
         correct: 'c'
     },  {
-        question: 'Top box office anime of all time',
-        a:  'Death Note',
+        question: 'pues',
+        a:  'well',
         b:  'Demon Slayer',
         c:  'Dragon Ball Z',
         d:  'Your Name',
         correct: 'b'
     },  {
-        question: 'Which country watches the most anime',
-        a:  'US',
+        question: 'ademas',
+        a:  'also',
         b:  'Japan',
         c:  'France',
         d:  'Phillipines',
         correct: 'a'
     },  {
-        question: 'Which anime does the character Ryoma Echizen belong to?',
-        a:  'Soul Eater',
+        question: 'llevar',
+        a:  'to carry',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
+        correct: 'd'
+    },   {
+        question: 'podemos intentarlo',
+        a:  'we can try',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
+    }    {
+        question: 'que emocion',
+        a:  'what a thrill',
+        b:  'Akira Toriyama',
+        c:  'Shiro Watanabe',
+        d:  'Yoshi Fujima',
+        correct: 'b'
+    },  {
+        question: 'bromeando',
+        a:  'joking',
+        b:  'Elizabeth Heinz',
+        c:  'Yoko Kanno',
+        d:  'Alpha Andromedae',
+        correct: 'c'
+    },  {
+        question: 'digo',
+        a:  'say',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
+        correct: 'b'
+    },  {
+        question: 'piensa',
+        a:  'think',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
+        correct: 'a'
+    },  {
+        question: 'no se que le vas a regalar',
+        a:  'i dont know what you are going to give him',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
+        correct: 'd'
+    },   {
+        question: 'casi se mi olvida',
+        a:  'I almost forgot',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
+    }   {        
+        question: 'no seas asi',
+        a:  'dont be like that',
+        b:  'Akira Toriyama',
+        c:  'Shiro Watanabe',
+        d:  'Yoshi Fujima',
+        correct: 'b'
+    },  {
+        question: 'sobrino',
+        a:  'nephew',
+        b:  'Elizabeth Heinz',
+        c:  'Yoko Kanno',
+        d:  'Alpha Andromedae',
+        correct: 'c'
+    },  {
+        question: 'llevare',
+        a:  'I will take',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
+        correct: 'b'
+    },  {
+        question: 'reconoce',
+        a:  'recognize',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
+        correct: 'a'
+    },  {
+        question: 'entrenamiento',
+        a:  'training',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
+        correct: 'd'
+    },   {
+        question: 'cancha',
+        a:  'court',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
+    }    {
+        question: 'prestar',
+        a:  'to lend',
+        b:  'Akira Toriyama',
+        c:  'Shiro Watanabe',
+        d:  'Yoshi Fujima',
+        correct: 'b'
+    },  {
+        question: 'relajate',
+        a:  'relax',
+        b:  'Elizabeth Heinz',
+        c:  'Yoko Kanno',
+        d:  'Alpha Andromedae',
+        correct: 'c'
+    },  {
+        question: 'equivocado',
+        a:  'wrong',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
+        correct: 'b'
+    },  {
+        question: 'piensa',
+        a:  'think',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
+        correct: 'a'
+    },  {
+        question: 'no se que le vas a regalar',
+        a:  'i dont know what you are going to give him',
         b:  'Bleach',
         c:  'Grappler Baki',
         d:  'Prince of Tennis',
@@ -41,7 +167,7 @@ const testData = [
         c:  'Wings of Honneamise',
         d:  'Kimba',
         correct: 'c'
-    }
+}
 
 ];
 
