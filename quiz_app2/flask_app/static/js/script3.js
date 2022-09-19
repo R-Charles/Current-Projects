@@ -41,6 +41,76 @@ const testData = [
         c:  'Wings of Honneamise',
         d:  'Kimba',
         correct: 'c'
+    },  {
+        question: 'DOM stands for',
+        a:  'Yuki Kajiura',
+        b:  'Elizabeth Heinz',
+        c:  'Document Object Model',
+        d:  'Alpha Andromedae',
+        correct: 'c'
+    },  {
+        question: 'Top box office anime of all time',
+        a:  'Death Note',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
+        correct: 'b'
+    },  {
+        question: 'Which country watches the most anime',
+        a:  'US',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
+        correct: 'a'
+    },  {
+        question: 'Which anime does the character Ryoma Echizen belong to?',
+        a:  'Soul Eater',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
+        correct: 'd'
+    },   {
+        question: 'What was the first anime movie, released in 1945?',
+        a:  'Momotaro',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
+    },  {
+        question: 'Top female anime composer of all time?',
+        a:  'Yuki Kajiura',
+        b:  'Elizabeth Heinz',
+        c:  'Yoko Kanno',
+        d:  'Alpha Andromedae',
+        correct: 'c'
+    },  {
+        question: 'Top box office anime of all time',
+        a:  'Death Note',
+        b:  'Demon Slayer',
+        c:  'Dragon Ball Z',
+        d:  'Your Name',
+        correct: 'b'
+    },  {
+        question: 'Which country watches the most anime',
+        a:  'US',
+        b:  'Japan',
+        c:  'France',
+        d:  'Phillipines',
+        correct: 'a'
+    },  {
+        question: 'Which anime does the character Ryoma Echizen belong to?',
+        a:  'Soul Eater',
+        b:  'Bleach',
+        c:  'Grappler Baki',
+        d:  'Prince of Tennis',
+        correct: 'd'
+    },   {
+        question: 'What was the first anime movie, released in 1945?',
+        a:  'Momotaro',
+        b:  'Astro Boy',
+        c:  'Wings of Honneamise',
+        d:  'Kimba',
+        correct: 'c'
     }
 
 ];
