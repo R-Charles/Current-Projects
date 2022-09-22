@@ -6,12 +6,15 @@ import './App.css';
 function App() {
 	const [ state, setState ] = useState({ message: "", name: "" })
 	const [ chat, setChat ] = useState([])
+	const [socket] = useState(() => io(':8000'));
+
+
 
 	const socketRef = useRef()
 
 	useEffect(
 		() => {
-			socketRef.current = io.connect("http://localhost:4000")
+			socketRef.current = io.connect("http://localhost:8000")
 			socketRef.current.on("message", ({ name, message }) => {
 				setChat([ ...chat, { name, message } ])
 			})
