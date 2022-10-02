@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Hud/Tuto/Tuto.gd" type="Script" id=1]
+[ext_resource path="res://Hud/Tuto.png" type="Texture" id=2]
+
+[node name="Tuto" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -7.0
+margin_top = 122.0
+margin_right = 324.0
+margin_bottom = 188.0
+color = Color( 0.321569, 0.321569, 0.321569, 0.654902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 46.0
+margin_top = 128.0
+margin_right = 272.0
+margin_bottom = 168.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TutoTime" type="Timer" parent="."]
+wait_time = 0.5
+one_shot = true
+autostart = true
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="timeout" from="TutoTime" to="." method="_on_TutoTime_timeout"]

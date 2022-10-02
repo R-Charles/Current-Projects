@@ -1,0 +1,213 @@
+[
+        {
+        "Category": "Spanish",
+        "Front": "Tuvo",
+        "Back": "Had"
+    },  {
+        "Category": "Spanish",
+        "Front": "Algo",
+        "Back": "something"
+    },  {
+        "Category": "Spanish",
+        "Front": "Pues",
+        "Back": "well"
+    },  {
+        "Category": "Spanish",
+        "Front": "Ademas",
+        "Back": "also"
+    },  {
+        "Category": "Spanish",
+        "Front": "llevar",
+        "Back": "to carry"
+    },   {
+        "Category": "Spanish",
+        "Front": "Podemos intentarlo",
+        "Back": "we can try"
+        
+    },    {
+        "Category": "Spanish",
+        "Front": "Que emocion",
+        "Back": "what a thrill"
+    
+    },  {
+        "Category": "Spanish",
+        "Front": "Bromeando",
+        "Back": "Joking"
+    
+    },  {
+        "Category": "Spanish",
+        "Front": "Digo",
+        "Back": "Say"
+
+    },  {
+        "Category": "Spanish",
+        "Front": "Piensa",
+        "Back": "Think"
+
+    },  {
+        "Category": "Spanish",
+        "Front": "No se que le vas a regalar",
+        "Back": "I dont know what you are going to give him"
+        
+    },   {
+        "Category": "Spanish",
+        "Front": "Casi se mi olvida",
+        "Back": "I almost forgot"
+
+    },   {  
+        "Category": "Spanish",
+        "Front": "No seas asi",
+        "Back": "Dont be like that "      
+        
+    },  {
+        "Category": "Spanish",
+        "Front": "Sobrino",
+        "Back": "Nephew"
+
+    },  {
+        "Category": "Spanish",
+        "Front": "llevare",
+        "Back": "I will take"
+
+    },  {
+        "Category": "Spanish",
+        "Front": "Reconoce",
+        "Back": "Recognize"
+        
+    },  {
+        "Category": "Spanish",
+        "Front": "Entrenamiento",
+        "Back": "Training"
+
+    },   {
+        "Category": "Spanish",
+        "Front": "Cancha",
+        "Back": "Court"
+
+    },    {
+        "Category": "Spanish",
+        "Front": "Prestar",
+        "Back": "To lend"
+        
+    },  {
+        "Category": "Spanish",
+        "Front": "relajate",
+        "Back": "relax"
+
+    },  {
+        "Category": "Spanish",
+        "Front": "Equivocado",
+        "Back": "Wrong"
+    },  {
+        "Category": "coding",
+        "Front": "What does DOM mean",
+        "Back": "Document Object Model"
+        
+    },  {
+        "Category": "Arabic",
+        "Front": "أزرق",
+        "Back": "Blue"
+        
+    },   {
+        "Category": "Arabic",
+        "Front": "امرأة",
+        "Back": "Woman"
+        
+    },   {
+        "Category": "Arabic",
+        "Front": "أستاذ",
+        "Back": "The professor"
+    },    {
+        "Category": "Coding",
+        "Front": "What does JSON stand for",
+        "Back": "JavaScript Object Notation"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "What is a DDoS attack",
+        "Back": "attempts to exhaust an applications resources. The perpetrators behind these attacks flood a site with errant traffic, resulting in poor website functionality or knocking it offline altogether"
+        
+    },  {
+        "Category": "JavaScript ",
+        "Front": "What does .map do",
+        "Back": "Creates a copy of an array and alters it however we state"
+        
+    },  {
+        "Category": "Arabic",
+        "Front": "زوجة",
+        "Back": "wife"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what is routing",
+        "Back": ""
+        
+    },  {
+        "Category": "coding",
+        "Front": "what is an API",
+        "Back": "Application Programming Interface... A source for some external data that you can use in your application"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what is fetching?",
+        "Back": "the retrieval of data by a software program, script, or hardware device"
+        
+    },  {
+        "Category": "coding",
+        "Front": "what does the fetch() method return",
+        "Back": "Returns a Promise so you can use the then() and catch() methods to handle it"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what is a response?",
+        "Back": "when a search engine or website visitor makes a request to a web server, a three digit HTTP Response Status Code is returned. This code indi
+                indicates what is about to happen. A response code of 200 means - okay, here is the content you requested. 301 means - the page has moved, redirecting you now."
+        
+    },  {
+        "Category": "coding",
+        "Front": "asynchronous code",
+        "Back": "refers to the occurrence of events independent of the main program flow. events do no wait for others to finish."
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what does axios do",
+        "Back": ""
+        
+    },  {
+        "Category": "coding",
+        "Front": "why use MongoDB",
+        "Back": "Everything stored in MongoDB is a JSON object...JavaScript Object Notation"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what is an ORM",
+        "Back": "Object Relational Mapper ex - Mongoose (allows us to communicate with MongoDB using javascript)"
+        
+    },  {
+        "Category": "coding",
+        "Front": "what does CORS stand for ",
+        "Back": "Cross Origin Resource Sharing"
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what are the 2 ports in use ?",
+        "Back": ".3000 for the front end(react) and 8000 for backend(apis etc)"
+        
+    },  {
+        "Category": "coding",
+        "Front": "asynchronous code",
+        "Back": "refers to the occurrence of events independent of the main program flow. events do no wait for others to finish."
+        
+    },  {
+        "Category": "Coding",
+        "Front": "what does axios do",
+        "Back": ""
+        
+    },  {
+        "Category": "coding",
+        "Front": "why use MongoDB",
+        "Back": "Everything stored in MongoDB is a JSON object"
+        
+    }
+
+]

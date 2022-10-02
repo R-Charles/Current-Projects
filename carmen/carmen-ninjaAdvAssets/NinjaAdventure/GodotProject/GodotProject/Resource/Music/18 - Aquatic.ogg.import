@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/18 - Aquatic.ogg-245a919a55459e267260697c81f9256c.oggstr"
+
+[deps]
+
+source_file="res://Resource/Music/18 - Aquatic.ogg"
+dest_files=[ "res://.import/18 - Aquatic.ogg-245a919a55459e267260697c81f9256c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

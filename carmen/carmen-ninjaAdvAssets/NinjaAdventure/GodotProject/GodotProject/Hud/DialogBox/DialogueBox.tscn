@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Resource/Font/NormalFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Hud/DialogBox/NinePathRect/DialogueBubble.png" type="Texture" id=2]
+[ext_resource path="res://Hud/DialogBox/NinePathRect/FacesetBox.png" type="Texture" id=3]
+[ext_resource path="res://World/Actor/Npc/Boy/6.png" type="Texture" id=4]
+[ext_resource path="res://Hud/DialogBox/DialogueBox.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 19, 19 )
+margin_left = 8.0
+margin_right = 8.0
+margin_top = 8.0
+margin_bottom = 8.0
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 7.0
+margin_right = 6.0
+margin_top = 6.0
+margin_bottom = 6.0
+
+[node name="DialogueBox" type="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -4.0
+margin_bottom = -4.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rect" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 128.0
+margin_right = -8.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Faceset" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 13.0
+margin_top = 128.0
+margin_right = -259.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rect" type="Panel" parent="Faceset"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -2.0
+margin_right = 1.0
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="Faceset"]
+position = Vector2( 24, 24 )
+texture = ExtResource( 4 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 67.0
+margin_top = 136.0
+margin_right = 307.0
+margin_bottom = 176.0
+custom_fonts/normal_font = ExtResource( 1 )
+custom_colors/default_color = Color( 0.0784314, 0.105882, 0.105882, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
