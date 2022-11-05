@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Buzz</title>
+</head>
+<body>
+    <div id="heading1">
+        <h1>
+        Welcome to Current Buzz, {{session['first_name']}}
+        </h1>
+    </div>
+    <p>
+        <a href="/user/logout">
+            Logout
+        </a>
+    </p>
+    <div>
+        <h2>Charge Station Updates</h2>
+    </div>
+    <table>
+        <tr>
+            <th>
+                Location 
+            </th>
+            <th> 
+                Station Number  
+            </th>
+            <th> 
+                Charging Speed 
+            </th>
+            <th> 
+                Actions
+            </th>
+        </tr>
+        {% for station in stations_list: %}
+        <tr> 
+            <td>
+                {{station.location}} 
+            </td>
+            <td>
+                {{station.station_num}}
+            </td>
+            <td>
+                {{station.user['first_name']}}
+            </td>
+            <td>
+                <a href="/show/{{station.id}}">View</a>
+                <a href="/stations/{{station.id}}/edit">Edit</a>
+                <a href="/stations/{{station.id}}/delete">Delete</a>
+                {#<!-- {% if session['users_id'] == station.id: %}  
+                
+                
+                {% endif %} -->#}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>
+        <a href="/new">
+            +Add A Station 
+        </a>
+    </p>
+</body>
+</html>

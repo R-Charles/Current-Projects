@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Buzz</title>
+</head>
+<!-- login and registration -->
+<body>
+    <h1>Post New Station Comment </h1>
+    <p>
+        <a href="/new">
+            Dashboard 
+        </a>
+    </p>
+    <p>
+        <a href="/user/logout">
+            Logout
+        </a>
+    </p>
+    <form method="POST" action="/stations/new">
+        <div>
+            <label>
+                Location:
+            </label>
+            <input type="text" name="location" /> 
+            {% for message in get_flashed_messages(category_filter = ['error_location'] ) %}
+                {{message}}
+            {% endfor %}
+        </div>
+        </div>
+        <div>
+            <label>
+                Station Number:
+            </label>
+            <input type="text" name="station_num"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_station_num'] ) %}
+            {{message}}
+        {% endfor %}
+        </div>
+        <div>
+            <label>
+                Charging Speed:
+            </label>
+            <input type="text" name="charging_speed"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_charging_speed'] ) %}
+            {{message}}
+        {% endfor %}
+        </div>
+        <div>
+            <label>
+                Charge Station Functioning:
+            </label>
+            <input type="text" name="charge_station_functioning"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_charge_station_functioning'] ) %}
+            {{message}}
+        {% endfor %}
+        </div>
+
+        <button type="submit">Post</button>
+    </form>
+</body>
+</html
