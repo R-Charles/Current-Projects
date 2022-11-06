@@ -65,7 +65,7 @@
         {% endif %}
 
         <div class="form-container sign-up-container">
-        <form action="/register/process" method="post">
+        <form action="/user/create" method="post">
         <h1 class="mb-4">Create Account</h1>
         <input type="text" placeholder="First Name" name="first_name" id="first_name" />
         <input type="text" placeholder="Last Name" name="last_name" id="last_name" />
@@ -85,7 +85,7 @@
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="/login/process" method="post">
+        <form action="/user/create" method="post">
         <h1 class="mb-3">Sign in</h1>
         <input type="email" placeholder="Email" name="email" id="email" />
         {% for message in

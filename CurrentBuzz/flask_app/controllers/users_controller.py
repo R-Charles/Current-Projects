@@ -38,8 +38,8 @@ def registration():
     session['first_name'] = data['first_name']
     session['email'] = data['email']
     session['user_id'] = user_id
-#fix shows url
-    return redirect( '/cars' ) #This needs to change to another display route ('/user/welcome') ---/cars----
+#fix shows url 
+    return redirect( '/stations' ) #This needs to change to another display route ('/user/welcome') ---/cars----
 
 @app.route('/user/login', methods = ['POST']) ##******************##
 def logon():
@@ -53,7 +53,7 @@ def logon():
         session['first_name'] = current_user[0]["first_name"]
         session['email'] = current_user[0]["email"]
         session['user_id'] = current_user[0]["id"]
-        return redirect( '/shows' )   #('/user/welcome')
+        return redirect( '/stations' )   #('/user/welcome')
     else: 
         flash("uh oh", "spaghetti")
         return redirect( '/' )
