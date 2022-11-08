@@ -38,13 +38,13 @@
         {% for station in stations_list: %}
         <tr> 
             <td>
-                {{station.location}} 
+                {{station.address}} 
             </td>
             <td>
-                {{station.station_num}}
+                {{station.station}}
             </td>
             <td>
-                {{station.user['first_name']}}
+                {{station.charging_speed}}
             </td>
             <td>
                 <a href="/show/{{station.id}}">View</a>

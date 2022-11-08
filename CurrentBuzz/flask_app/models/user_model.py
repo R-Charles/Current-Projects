@@ -27,7 +27,7 @@ class User:
     def get_one_to_validate_email( cls, data ):
         query = "SELECT * "
         query += "FROM users "
-        query += "WHERE email = %(email)s;"
+        query += "WHERE email = %(email)s; "
 
         result = connectToMySQL( DATABASE ).query_db( query, data )
 

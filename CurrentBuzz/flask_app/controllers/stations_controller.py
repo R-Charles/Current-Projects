@@ -42,7 +42,7 @@ def show_all():
     # data = {
     #     "id" : id
     # }
-    stations_list = Station.get_all_with_users()
+    stations_list = Station.get_all()
     return render_template('dashboard.html', stations_list = stations_list )
 
 # @app.route( '/recipes' )
@@ -71,7 +71,7 @@ def display_station( id ):
     data = {
         "id" : id
     }
-    current_station = Station.get_one_with_user( data )
+    current_station = Station.get_one_with_station( data )
     return render_template( "show.html", current_station = current_station )
 
 # watchout for potential error in f'... added cars to line 77
