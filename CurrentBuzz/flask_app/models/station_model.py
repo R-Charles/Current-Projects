@@ -43,10 +43,10 @@ class Station:
 
     @classmethod
     def get_one_with_station( cls, data ):
-        query = " SELECT * " 
-        query += " FROM comments "
-        query += " JOIN stations ON comments.station_id = stations.id "
-        query += " WHERE comments.id = %(id)s;"
+        query = """
+        SELECT * FROM stations 
+        JOIN comments ON stations.id = comments.station_id 
+        WHERE stations.id = %(id)s;"""
 
         result = connectToMySQL( DATABASE ).query_db( query, data )
 
@@ -55,11 +55,12 @@ class Station:
             station_data = {
                 
                 **result[0],
-                "created_at" : result[0]['stations.created_at'],
-                "updated_at" : result[0]['stations.updated_at'],
-                "id" : result[0]['stations.id'] 
+                "created_at" : result[0]['created_at'],
+                "updated_at" : result[0]['updated_at'],
+                "id" : result[0]['id'] 
             
             }
+            print(result[0])
             current_comment.station = Station( station_data )
             return current_comment
         else:
