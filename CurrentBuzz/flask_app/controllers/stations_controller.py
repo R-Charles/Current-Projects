@@ -16,13 +16,13 @@ from flask_app.models.station_model import Station
 def display_create_post():
     if 'email' not in session:
         return redirect( '/' )
-    return render_template( "posts_new.html" )
+    return render_template( "stations_new.html" )
 
 # /shows/new----/shows/new ------ /cars/new
 @app.route( '/stations/new', methods = ['POST'] )
 def create_post():
-    if Station.validate_post( request.form ) == False:  #validate fields
-        return redirect( '/stations/new' )
+    if Station.validate_station( request.form ) == False:  #validate fields
+        return redirect( '/new' )
 
     data = {
         **request.form,

@@ -15,8 +15,8 @@ class Station:
 
     @classmethod
     def create( cls,data ):
-        query = "INSERT INTO stations( address, charging_speed, functionality, station, user_id ) "
-        query += "VALUES (%(address)s, %(charging_speed)s, %(functionality)s, %(station)s, )s, %(comment_id)s );"
+        query = "INSERT INTO stations( address, charging_speed, functionality, station) "
+        query += "VALUES (%(address)s, %(charging_speed)s, %(functionality)s, %(station)s );"
 
         result = connectToMySQL( DATABASE ).query_db( query,data )
         print(result)
@@ -85,21 +85,19 @@ class Station:
     @staticmethod
     def validate_station( data ):
         is_valid = True 
-        # if len(data["address"]) == '':
-            # flash( "address must not be empty", "error_car_model" )
-            # is_valid = False 
-        if len(data['functionality']) == "":
-            flash( "functionality must not be empty", "error_station_functionality" )
+        if len(data["address"]) < 5:
+            flash( "address must not be less than 5 characters", "error_location" )
             is_valid = False 
-        if len(data['functionality']) < 3:
-            flash("functionality must be at least 2 characters.", "error_registration_description")
-            is_valid = False    
+        if int(data['functionality']) != 0 and int(data['functionality']) != 1:
+            print(data['functionality'], "This is the function")
+            flash( "0=no and 1=yes", "error_station_functionality" )
+            is_valid = False 
         if int(data['station']) < 0:
-            flash( "station must not be empty", "error_station_num" )
+            flash( "station must not be empty", "error_station" )
             is_valid = False 
-        # if int(data)']) < 0:
-        #     flash( must not be empty", "error_car_price" )
-        #     is_valid = False 
+        if len(data['charging_speed']) < 2:
+            flash( "must not be less than 10 characters", "error_charging_speed" )
+            is_valid = False 
 
         return is_valid
 

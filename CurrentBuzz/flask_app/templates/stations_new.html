@@ -10,7 +10,7 @@
 <body>
     <h1>Post New Station Comment </h1>
     <p>
-        <a href="/new">
+        <a href="/stations">
             Dashboard 
         </a>
     </p>
@@ -24,7 +24,7 @@
             <label>
                 Location:
             </label>
-            <input type="text" name="location" /> 
+            <input type="text" name="address" /> 
             {% for message in get_flashed_messages(category_filter = ['error_location'] ) %}
                 {{message}}
             {% endfor %}
@@ -34,8 +34,8 @@
             <label>
                 Station Number:
             </label>
-            <input type="text" name="station_num"></input>
-            {% for message in get_flashed_messages(category_filter = ['error_station_num'] ) %}
+            <input type="number" name="station"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_station'] ) %}
             {{message}}
         {% endfor %}
         </div>
@@ -52,8 +52,8 @@
             <label>
                 Charge Station Functioning:
             </label>
-            <input type="text" name="charge_station_functioning"></input>
-            {% for message in get_flashed_messages(category_filter = ['error_charge_station_functioning'] ) %}
+            <input type="number" name="functionality"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_station_functionality'] ) %}
             {{message}}
         {% endfor %}
         </div>
