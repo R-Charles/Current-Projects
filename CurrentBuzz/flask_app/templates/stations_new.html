@@ -56,6 +56,14 @@
             {% for message in get_flashed_messages(category_filter = ['error_station_functionality'] ) %}
             {{message}}
         {% endfor %}
+        <div>
+            <label>
+                Comment:
+            </label>
+            <input type="text" name="content"></input>
+            {% for message in get_flashed_messages(category_filter = ['error_station_comment'] ) %}
+            {{message}}
+        {% endfor %}
         </div>
 
         <button type="submit">Post</button>

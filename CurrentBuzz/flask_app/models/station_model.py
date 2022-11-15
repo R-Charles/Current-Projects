@@ -96,7 +96,10 @@ class Station:
             flash( "station must not be empty", "error_station" )
             is_valid = False 
         if len(data['charging_speed']) < 2:
-            flash( "must not be less than 10 characters", "error_charging_speed" )
+            flash( "must not be less than 2 characters", "error_charging_speed" )
+            is_valid = False 
+        if len(data['content']) < 5:
+            flash( "must not be less than 5 characters", "error_station_comment" )
             is_valid = False 
 
         return is_valid
