@@ -1,7 +1,8 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
 from flask_app import DATABASE
-from flask_app.models.user_model import User
+from flask_app.models import user_model
+from flask_app.models import comment_model
 
 class Station:
     def __init__( self, data ):
@@ -51,18 +52,20 @@ class Station:
         result = connectToMySQL( DATABASE ).query_db( query, data )
 
         if len( result ) > 0: 
-            current_comment = cls( result[0] )
-            station_data = {
+            current_station = cls( result[0] )
+            AllComments = []
+            for dictionary in result:
+                comment_data = {
                 
-                **result[0],
-                "created_at" : result[0]['created_at'],
-                "updated_at" : result[0]['updated_at'],
-                "id" : result[0]['id'] 
+                **dictionary,
+                "created_at" : dictionary['comments.created_at'],
+                "updated_at" : dictionary['comments.updated_at'],
+                "id" : dictionary['comments.id'] 
             
-            }
-            print(result[0])
-            current_comment.station = Station( station_data )
-            return current_comment
+                }
+                AllComments.append(comment_model.Comment( comment_data ))
+            current_station.comments= AllComments
+            return current_station
         else:
             return None
 

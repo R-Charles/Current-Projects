@@ -21,13 +21,23 @@
             
 
             <div>
-                Station Number: {{current_station.station}} 
+                Station Number: {{current_station.station_id}} 
+                {% for station in current_station.comments %}
+                <div>
+                    {{station}}
+                </div>
+                {%endfor%}
             </div>
             <div>
                 Location:{{current_station.address}}
             </div>
             <div>
-                Comment:{{current_station.content}}
+                Comment:
+                {% for comment in current_station.comments %}
+                <div>
+                    {{comment.content}}
+                </div>
+                {%endfor%}
             </div>
             <div>
                 Charging Speed:{{current_station.charging_speed}}
@@ -43,3 +53,4 @@
 <!-- <div id="heading1">
 </div> -->
 <!-- <div id="gry"><a href="/shows">Shows</a></div> -->
+

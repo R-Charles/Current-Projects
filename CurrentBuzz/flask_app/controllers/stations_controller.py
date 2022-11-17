@@ -1,6 +1,7 @@
 from flask_app import app
 from flask import render_template, request, redirect, flash, session
 from flask_app.models.station_model import Station
+from flask_app.models.comment_model import Comment
 
 
 # @app.route( '/shows/<int:id>' )

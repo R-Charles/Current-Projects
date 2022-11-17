@@ -1,7 +1,7 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
 from flask_app import DATABASE
-from flask_app.models.station_model import Station
+from flask_app.models import station_model
 
 class Comment:
     def __init__( self, data ):
@@ -39,7 +39,7 @@ class Comment:
                 "updated_at" : row['users.updated_at'],
                 "id" : row['stations.id'] ##was [user.id]
             }
-            current_station = Station( station_data )
+            current_station = station_model.Station( station_data )
             current_comment.station = current_station
             list_comments.append( current_comment )
         return list_comments
