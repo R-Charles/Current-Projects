@@ -14,6 +14,10 @@ class User:
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
 
+    # @classmethod
+    # def info():
+    #     print()
+
     @classmethod
     def create( cls, data ):
         query = "INSERT INTO users( first_name, last_name, email, password ) "
@@ -35,6 +39,7 @@ class User:
         if len( result ) > 0:
             print("1234")
             current_user = cls( result[0] )
+            print(current_user)
             return current_user
 
     @classmethod

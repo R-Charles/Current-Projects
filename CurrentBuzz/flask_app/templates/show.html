@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CurrentBuzz</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Current Buzz</title>
 </head>
 <body>
     <p>
@@ -19,31 +20,34 @@
     </p>
 
             
-
-            <div>
-                Station Number: {{current_station.station_id}} 
-                {% for station in current_station.comments %}
-                <div>
-                    {{station}}
+    <Table>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    Station Number: {{current_station.station_id}} 
+                    {% for station in current_station.comments %}
+                    <div class="col">
+                        {{station.id}}
+                    </div>
+                    {%endfor%}
                 </div>
-                {%endfor%}
-            </div>
-            <div>
-                Location:{{current_station.address}}
-            </div>
-            <div>
-                Comment:
-                {% for comment in current_station.comments %}
-                <div>
-                    {{comment.content}}
+                <div class="col" >
+                    Location:{{current_station.address}}
                 </div>
-                {%endfor%}
-            </div>
-            <div>
-                Charging Speed:{{current_station.charging_speed}}
+                <div class="col">
+                    Comment:
+                    {% for comment in current_station.comments %}
+                    <div class="col">
+                        {{comment.content}}
+                    </div>
+                    {%endfor%}
+                </div>
+                <div class="col">
+                    Charging Speed:{{current_station.charging_speed}}
+                </div>
             </div>
             <button type="submit">Post</button>
-
+        </div>
     </table>
 </body>
 </html>
