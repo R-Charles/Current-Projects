@@ -5,65 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Current Buzz</title>
 </head>
 <body>
     <div id="l_column">
-    <h2>
-        Register 
-    </h2>
-    <form method="POST" action="/user/create">
-        <div>
-            <label>
-                First name:
-            </label>
-            <input type="text" name="first_name" /> 
-            {% for message in get_flashed_messages(category_filter = ['error_registration_first_name'] ) %}
-                {{message}}
-            {% endfor %}
-        </div>
-        </div>
-        <div>
-            <label>
-                Last name:
-            </label>
-            <input type="text" name="last_name" />
-            {% for message in get_flashed_messages(category_filter = ['error_registration_last_name'] ): %}
-                {{message}}
-            {% endfor %}
-        </div>
-        </div>
-        <div>
-            <label>
-                Email:
-            </label>
-            <input type="text" name="email" /> 
-            {% for message in get_flashed_messages(category_filter = ['error_registration_email'] ): %}
-                {{message}}
-            {% endfor %}
-        </div>
-        </div>
-        <div>
-            <label>
-                Password:
-            </label>
-            <input type="password" name="password" />
-            {% for message in get_flashed_messages(category_filter = ['error_registration_password'] ): %}
-                {{message}}
-            {% endfor %}
-        </div>
-        </div>
-        <div>
-            <label>
-                Password confirmation:
-            </label>
-            <input type="password" name="password_confirmation" />
-            {% for message in get_flashed_messages(category_filter = ['error_registration_password_confirmation'] ): %}
-                {{message}}
-            {% endfor %}
-        </div>
-        <button type="submit">Register</button>
-    </form>
+        <h2>
+            Register 
+        </h2>
+        <form method="POST" action="/user/create">
+            <div>
+                <label>
+                    First name:
+                </label>
+                <input type="text" name="first_name" /> 
+                {% for message in get_flashed_messages(category_filter = ['error_registration_first_name'] ) %}
+                    {{message}}
+                {% endfor %}
+            </div>
+            <div>
+                <label>
+                    Last name:
+                </label>
+                <input type="text" name="last_name" />
+                {% for message in get_flashed_messages(category_filter = ['error_registration_last_name'] ): %}
+                    {{message}}
+                {% endfor %}
+            </div>
+            <div>
+                <label>
+                    Email:
+                </label>
+                <input type="text" name="email" /> 
+                {% for message in get_flashed_messages(category_filter = ['error_registration_email'] ): %}
+                    {{message}}
+                {% endfor %}
+            </div>
+            <div>
+                <label>
+                    Password:
+                </label>
+                <input type="password" name="password" />
+                {% for message in get_flashed_messages(category_filter = ['error_registration_password'] ): %}
+                    {{message}}
+                {% endfor %}
+            </div>
+            <div>
+                <label>
+                    Password confirmation:
+                </label>
+                <input type="password" name="password_confirmation" />
+                {% for message in get_flashed_messages(category_filter = ['error_registration_password_confirmation'] ): %}
+                    {{message}}
+                {% endfor %}
+            </div>
+            <button type="submit">Register</button>
+        </form>
     </div>
     <div id="r_column">
     <h2>

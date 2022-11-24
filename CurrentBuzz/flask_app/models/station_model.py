@@ -81,7 +81,7 @@ class Station:
     @classmethod
     def delete_one( cls, data ):
         query = " DELETE FROM stations "
-        query += "WHERE id = %(id)s;"
+        query += "WHERE id = %(id)s; "
         return connectToMySQL( DATABASE ).query_db( query, data )
 
 

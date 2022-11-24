@@ -3,7 +3,9 @@ from flask_app import app
 from flask import render_template, session, redirect, request, flash
 from flask_bcrypt import Bcrypt
 bcrypt = Bcrypt(app)
-# from flask_app.models.user_model import user_model ****
+from flask_app.models import user_model 
+
+
 
 @app.route('/') #works
 def login():
@@ -41,16 +43,16 @@ def registration():
 @app.route('/user/login', methods = ['POST']) ##******************##
 def logon():
     current_user = User.get_one_to_validate_email( request.form )
-    print(current_user['password'], "helloboop")
+    print(current_user.password, "helloboop")
     print(request.form['password'])
     if current_user:
-        # print(current_user[0]["password"]) //WATCHOUT FOR CODE ERROR HERE 
-        if not bcrypt.check_password_hash(current_user["password"], request.form['password']):
+        print(current_user.password)
+        if not bcrypt.check_password_hash(current_user.password, request.form['password']):
             flash("Improper Credentials", "error_improper_credentials")
             return redirect( '/' )
-        session['first_name'] = current_user["first_name"]
-        session['email'] = current_user["email"]
-        session['user_id'] = current_user["id"]
+        session['first_name'] = current_user.first_name
+        session['email'] = current_user.email
+        session['user_id'] = current_user.id
         return redirect( '/stations' )   #('/user/welcome')
     else: 
         flash("uh oh", "spaghetti")
